@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Lumber Sign Studio — Admin</title>
+  <link rel="stylesheet" href="https://use.typekit.net/nck7spb.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="admin-page">
+  <main class="admin-shell">
+    <div class="admin-topbar">
+      <div>
+        <p class="eyebrow">Page Lumber Sign Studio</p>
+        <h1>Template Admin</h1>
+      </div>
+      <a class="button button-secondary" href="index.html">Back to gallery</a>
+    </div>
+
+    <div class="notice">
+      <strong>Static-site note:</strong>
+      This admin page stores visibility/order changes only in this browser using localStorage.
+      It is not secure authentication. If this site will be public, protect the admin route with your hosting platform or a real backend.
+    </div>
+
+    <section class="admin-card">
+      <div class="admin-card-header">
+        <div>
+          <h2>Templates</h2>
+          <p>Reorder templates or hide them from the public gallery.</p>
+        </div>
+        <button id="resetAdmin" class="button button-secondary" type="button">Reset defaults</button>
+      </div>
+      <div id="adminList" class="admin-list"></div>
+    </section>
+  </main>
+
+  <script src="templates.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
